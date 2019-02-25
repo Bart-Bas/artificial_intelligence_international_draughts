@@ -1,18 +1,12 @@
-package nl.tue.s2id90.groupNN;
+package nl.tue.s2id90.group87;
 
-import nl.tue.s2id90.groupNN.samples.UninformedPlayer;
-import nl.tue.s2id90.groupNN.samples.OptimisticPlayer;
-import nl.tue.s2id90.groupNN.samples.BuggyPlayer;
+import nl.tue.s2id90.group87.samples.UninformedPlayer;
+import nl.tue.s2id90.group87.samples.OptimisticPlayer;
+import nl.tue.s2id90.group87.samples.BuggyPlayer;
 import net.xeoh.plugins.base.annotations.PluginImplementation;
 import nl.tue.s2id90.draughts.DraughtsPlayerProvider;
 import nl.tue.s2id90.draughts.DraughtsPlugin;
 
-
-
-/**
- *
- * @author huub
- */
 @PluginImplementation
 public class MyDraughtsPlugin extends DraughtsPlayerProvider implements DraughtsPlugin {
     public MyDraughtsPlugin() {
@@ -20,7 +14,7 @@ public class MyDraughtsPlugin extends DraughtsPlayerProvider implements Draughts
         // During the final competition you should make only your 
         // best player available. For testing it might be handy
         // to make more than one player available.
-        super(new MyDraughtsPlayer(5),
+        super(new Player87(5),
                 new UninformedPlayer(),
                 new OptimisticPlayer(),
                 new BuggyPlayer()

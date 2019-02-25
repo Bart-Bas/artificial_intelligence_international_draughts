@@ -1,4 +1,4 @@
-package nl.tue.s2id90.groupNN;
+package nl.tue.s2id90.group87;
 
 import static java.lang.Integer.MAX_VALUE;
 import static java.lang.Integer.MIN_VALUE;
@@ -8,21 +8,15 @@ import nl.tue.s2id90.draughts.DraughtsState;
 import nl.tue.s2id90.draughts.player.DraughtsPlayer;
 import org10x10.dam.game.Move;
 
-/**
- * Implementation of the DraughtsPlayer interface.
- * @author huub
- */
-// ToDo: rename this class (and hence this file) to have a distinct name
-//       for your player during the tournament
-public class MyDraughtsPlayer  extends DraughtsPlayer{
+public class Player87  extends DraughtsPlayer{
     private int bestValue=0;
     int maxSearchDepth;
     
     /** boolean that indicates that the GUI asked the player to stop thinking. */
     private boolean stopped;
 
-    public MyDraughtsPlayer(int maxSearchDepth) {
-        super("best.png"); // ToDo: replace with your own icon
+    public Player87(int maxSearchDepth) {
+        super("thor.png");
         this.maxSearchDepth = maxSearchDepth;
     }
     
