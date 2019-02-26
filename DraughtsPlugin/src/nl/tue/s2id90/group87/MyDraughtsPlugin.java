@@ -1,8 +1,5 @@
 package nl.tue.s2id90.group87;
 
-import nl.tue.s2id90.group87.samples.UninformedPlayer;
-import nl.tue.s2id90.group87.samples.OptimisticPlayer;
-import nl.tue.s2id90.group87.samples.BuggyPlayer;
 import net.xeoh.plugins.base.annotations.PluginImplementation;
 import nl.tue.s2id90.draughts.DraughtsPlayerProvider;
 import nl.tue.s2id90.draughts.DraughtsPlugin;
@@ -14,10 +11,6 @@ public class MyDraughtsPlugin extends DraughtsPlayerProvider implements Draughts
         // During the final competition you should make only your 
         // best player available. For testing it might be handy
         // to make more than one player available.
-        super(new Player87(5),
-                new UninformedPlayer(),
-                new OptimisticPlayer(),
-                new BuggyPlayer()
-        );
+        super(new Player87());
     }
 }
