@@ -23,12 +23,12 @@ After first compiling the AICompetition project and then the DraughtsPlugin proj
 
 ## TODO
 ### Basic
-* [ ] Implement alpha-beta
-* [ ] Implement an initial evaluation function
-* [ ] Implement iterative deepening
+* [x] Implement alpha-beta
+* [x] Implement an initial evaluation function
 
 ### Imrovements
 * [ ] Enhance evaluation function
+* [ ] Implement iterative deepening
 * [ ] Improve search function
 * [ ] Improve stop criterion for searching
 * [ ] Reuse results in a preveious iteration of iterative deepening
